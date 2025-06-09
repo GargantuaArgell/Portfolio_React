@@ -29,30 +29,30 @@ const Qualification = ({ onNavigate }) => {
     {
       title: "Objectifs Futurs",
       institution: "Évolution Professionnelle",
-      period: "2025+",
-      description: "Continuer à évoluer dans le développement informatique ainsi qu'en CyberSécurité, découvrir toujours de technologie et contribuer à des projets innovants.",
+      period: "2025 +",
+      description: "Poursuivre mon développement dans les domaines du développement informatique et de la cybersécurité tout en découvrant de nouvelles technologies et contribuer à des projets innovants.",
       skills: ["Programmation", "Leadership", "Innovation", "Veille Technologique"]
     },
     {
       title: "Stage Administration réseau chez Tivoly",
-      institution: "Entreprise Locale",
+      institution: "Entreprise internationale",
       period: "Avril 2025 - Juin 2025",
-      description: "Première expérience professionnelle en administration réseau. Création et mise en place d'un Bastion informatique ainsi que de script informatique pour optimiser certaines fonctions de l'entreprise.",
-      skills: ["Microsoft 365", "Bastion informatique", "Teleport", "Python", "PowerShell"]
+      description: "Première expérience en administration réseau. Réalisation de missions sensibles, incluant la création et la mise en place d’un Bastion informatique, ainsi que le développement de scripts d’automatisation pour optimiser les processus internes de l’entreprise.",
+      skills: ["Microsoft 365", "Bastion informatique", "Python", "PowerShell"]
     },
     {
-      title: "DUT Informatique",
-      institution: "IUT de Grenoble",
-      period: "2021-2023",
-      description: "Formation technique approfondie en développement logiciel, bases de données, réseaux et gestion de projet. Premier contact avec le monde professionnel via des stages.",
-      skills: ["Java", "Python", "SQL", "HTML/CSS", "JavaScript", "Gestion de projet"]
+      title: "BUT Informatique - Parcours Déploiement d'application Communicantes et Sécurisées",
+      institution: "IUT2 de Grenoble",
+      period: "2023 - Présent",
+      description: "Formation technique complète en développement logiciel, bases de données, réseaux et gestion de projet. Nombreux projets réalisés en conditions simulées, avec un encadrement régulier et des livrables professionnels.",
+      skills: ["Java", "Python", "SQL", "HTML/CSS", "JavaScript", "Gestion de projet", "C++"]
     },
     {
       title: "Baccalauréat Scientifique",
       institution: "Lycée Général",
-      period: "2018-2021",
-      description: "Formation générale avec spécialisation en mathématiques et sciences numériques. Développement des bases logiques et analytiques essentielles pour l'informatique.",
-      skills: ["Mathématiques", "Physique", "Logique", "Algorithmique de base"]
+      period: "2019 - 2023",
+      description: "Formation généraliste avec spécialisation en mathématiques et sciences numériques. Acquisition des fondements logiques et analytiques nécessaires à la pratique de l’informatique.",
+      skills: ["Mathématiques", "Sciences Numériques", "Logique", "Algorithmique de base"]
     }
   ]
 

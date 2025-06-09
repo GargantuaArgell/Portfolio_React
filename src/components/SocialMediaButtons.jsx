@@ -7,7 +7,9 @@ const SocialMediaButtons = ({ className = "" }) => {
         {/* LinkedIn */}
         <li className="group relative">
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/f%C3%A9lix-grandet-b94b9236a/"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="relative flex items-center justify-center w-12 h-12 bg-gray-800 rounded-lg transition-all duration-300 hover:bg-blue-600 overflow-hidden"
           >
@@ -31,7 +33,9 @@ const SocialMediaButtons = ({ className = "" }) => {
         {/* GitHub */}
         <li className="group relative">
           <a
-            href="https://www.github.com/"
+            href="https://github.com/GargantuaArgell"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
             className="relative flex items-center justify-center w-12 h-12 bg-gray-800 rounded-lg transition-all duration-300 hover:bg-gray-600 overflow-hidden"
           >
@@ -56,6 +60,8 @@ const SocialMediaButtons = ({ className = "" }) => {
         <li className="group relative">
           <a
             href="mailto:flx.grdt@proton.me"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="Email"
             className="relative flex items-center justify-center w-12 h-12 bg-gray-800 rounded-lg transition-all duration-300 hover:bg-red-600 overflow-hidden"
           >
