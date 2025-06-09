@@ -46,6 +46,22 @@ const ProjectBook = ({ onNavigate }) => {
       technologies: ["HTML5", "CSS3", "Web Design"],
       description: "Lors du début de ma première année en étude nous avons réalisé en groupe de 4 un site web d'une entreprise connue. Le but était de donner un nouvel aspect au site web pour donner envie à des étudiants de faire des stages dans cette entreprise.",
       teamSize: 4
+    },
+    {
+      id: 6,
+      title: "Stud'Life",
+      image: "/images/studlife.png",
+      technologies: ["Java", "Application Desktop", "Gestion d'événements"],
+      description: "Lors de la fin de ma première année d'étude, j'ai réalisé en groupe de 5 une application Java de notre choix. Nous avons donc dû trouver une idée, savoir la communiquer auprès de nos enseignants lors de réunions puis la réaliser en 1 semaine. Notre application était destinée aux associations étudiantes pour leur faciliter la création, la communication et l'administration d'événements.",
+      teamSize: 5
+    },
+    {
+      id: 7,
+      title: "Cassiopea",
+      image: "/images/cassiopea.png",
+      technologies: ["Wazuh", "PostgreSQL", "PmWiki", "Zabbix", "Apache2"],
+      description: "Durant ma deuxième année d'étude nous avions eu un projet de création et mise en place d'une infrastructure réseau. Lors de ce projet, j'ai eu l'occasion de pouvoir créer de zéro avec mes camarades un réseau complet avec de nombreux services (DNS, DHCP, PostgreSQL, Wiki) ainsi qu'une supervision du réseau (Zabbix, Wazuh).",
+      teamSize: 5
     }
   ]
 
