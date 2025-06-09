@@ -6,8 +6,8 @@ const Homepage = ({ onNavigate }) => {
   const [currentSection, setCurrentSection] = useState('profil')
 
   const handleCVDownload = () => {
-    // You'll need to add your CV file to the public folder
-    window.open('/Curriculum-Vitae-GRANDET-FELIX.pdf', '_blank')
+    // Open the CV file from the images folder
+    window.open('/images/Curriculum-Vitae-GRANDET-FELIX.pdf', '_blank')
   }
 
   const handleNavigation = (section) => {
