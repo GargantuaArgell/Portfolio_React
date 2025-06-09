@@ -62,6 +62,14 @@ const ProjectBook = ({ onNavigate }) => {
       technologies: ["Wazuh", "PostgreSQL", "PmWiki", "Zabbix", "Apache2"],
       description: "Durant ma deuxième année d'étude nous avions eu un projet de création et mise en place d'une infrastructure réseau. Lors de ce projet, j'ai eu l'occasion de pouvoir créer de zéro avec mes camarades un réseau complet avec de nombreux services (DNS, DHCP, PostgreSQL, Wiki) ainsi qu'une supervision du réseau (Zabbix, Wazuh).",
       teamSize: 5
+    },
+    {
+      id: 8,
+      title: "PhareAway",
+      image: "/images/phareaway.png",
+      technologies: ["TailwindCSS", "React", "SQLite", "NextJS", "Gestion de Projet", "Leadership", "Norme ISO"],
+      description: "Pour nous permettre de mettre en pratique les connaissances apportées tout au long de notre deuxième année, nous avons formé des groupes de 6 personnes pour réaliser un projet pour promouvoir le patrimoine français. Ce projet nous a permis de développer nos compétences en gestion d'équipe et d'appliquer les normes ISO dans un contexte de développement web moderne.",
+      teamSize: 6
     }
   ]
 
