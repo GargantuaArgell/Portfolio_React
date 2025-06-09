@@ -29,30 +29,16 @@ const Qualification = ({ onNavigate }) => {
     {
       title: "Objectifs Futurs",
       institution: "Évolution Professionnelle",
-      period: "2024+",
-      description: "Continuer à évoluer dans le développement web moderne, approfondir les connaissances en architecture logicielle et contribuer à des projets innovants.",
-      skills: ["Architecture", "Leadership", "Innovation", "Veille Technologique"]
+      period: "2025+",
+      description: "Continuer à évoluer dans le développement informatique ainsi qu'en CyberSécurité, découvrir toujours de technologie et contribuer à des projets innovants.",
+      skills: ["Programmation", "Leadership", "Innovation", "Veille Technologique"]
     },
     {
-      title: "Projet Portfolio",
-      institution: "Formation Continue",
-      period: "2024-Présent",
-      description: "Développement de ce portfolio comme démonstration de compétences acquises. Utilisation de technologies modernes et bonnes pratiques de développement.",
-      skills: ["React", "TailwindCSS", "Vite", "Component Architecture", "Responsive Design"]
-    },
-    {
-      title: "Licence Pro Dev Web",
-      institution: "IUT 2 Grenoble",
-      period: "2023-2024",
-      description: "Spécialisation en développement web avancé et technologies modernes. Projets d'envergure avec des clients réels et méthodologies professionnelles.",
-      skills: ["React", "Vue.js", "TypeScript", "Docker", "DevOps", "UX/UI Design"]
-    },
-    {
-      title: "Stage Développeur Web",
+      title: "Stage Administration réseau chez Tivoly",
       institution: "Entreprise Locale",
-      period: "Été 2022",
-      description: "Première expérience professionnelle en développement web. Création d'applications front-end modernes et apprentissage des méthodologies agiles.",
-      skills: ["React", "Node.js", "MongoDB", "Git", "Agile/Scrum"]
+      period: "Avril 2025 - Juin 2025",
+      description: "Première expérience professionnelle en administration réseau. Création et mise en place d'un Bastion informatique ainsi que de script informatique pour optimiser certaines fonctions de l'entreprise.",
+      skills: ["Microsoft 365", "Bastion informatique", "Teleport", "Python", "PowerShell"]
     },
     {
       title: "DUT Informatique",
