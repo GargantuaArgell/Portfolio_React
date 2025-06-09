@@ -143,7 +143,7 @@ const ProjectBook = ({ onNavigate }) => {
               onClick={() => goToProject(index)}
               className="p-4 bg-gradient-to-br from-cyan-500/20 to-purple-600/20 rounded-lg backdrop-blur-sm cursor-pointer hover:bg-gradient-to-br hover:from-cyan-400/30 hover:to-purple-500/30 transition-all duration-300 transform hover:scale-105 border border-cyan-400/30 hover:border-purple-400/50"
             >
-              <h3 className="text-lg font-semibold text-cyan-100">{project.title}</h3>
+              <h3 className="text-lg font-semibold text-blue-800">{project.title}</h3>
               <p className="text-sm text-black mt-2">
                 {project.description.substring(0, 100)}...
               </p>
@@ -166,15 +166,15 @@ const ProjectBook = ({ onNavigate }) => {
       <div className="space-y-6">
         <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent mb-6">À Propos</h2>
         <div className="bg-gradient-to-br from-purple-500/20 to-cyan-500/20 rounded-lg backdrop-blur-sm p-6 border border-purple-400/30">
-          <p className="text-cyan-100 leading-relaxed mb-4">
+          <p className="text-black leading-relaxed mb-4">
             Bienvenue dans mon livre de projets ! Chaque page raconte l'histoire d'un projet que j'ai développé, 
             des défis rencontrés aux solutions trouvées.
           </p>
-          <p className="text-cyan-100 leading-relaxed mb-4">
+          <p className="text-black leading-relaxed mb-4">
             Vous trouverez ici un aperçu de mes compétences techniques et de ma progression en tant que développeur. 
             Chaque projet représente une étape importante de mon apprentissage.
           </p>
-          <p className="text-cyan-100 leading-relaxed">
+          <p className="text-black leading-relaxed">
             Naviguez à travers les pages pour découvrir les technologies utilisées, les fonctionnalités implémentées 
             et les leçons apprises lors de chaque développement.
           </p>
