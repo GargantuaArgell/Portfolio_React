@@ -1,3 +1,6 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,9 +32,6 @@
 .animation-delay-4000 {
   animation-delay: 4s;
 }
-
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 
 body {
   font-family: 'Gabarito', sans-serif;
