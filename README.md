@@ -2,41 +2,151 @@
 
 This is a modular React portfolio built with TailwindCSS for IUT 2 Grenoble studies.
 
+## 🚀 Live Demo
+
+[Voir le portfolio en live](https://your-portfolio-url.vercel.app) (sera disponible après déploiement)
+
 ## Project Structure
 
 ```
 Portfolio_React/
 ├── src/
 │   ├── components/
-│   │   ├── Homepage.jsx    # Main homepage with "Hello World"
-│   │   ├── Header.jsx      # Navigation header (for future use)
-│   │   └── Footer.jsx      # Footer component (for future use)
-│   ├── App.jsx            # Main App component
-│   ├── main.jsx           # React entry point
-│   └── index.css          # TailwindCSS imports
-├── index.html             # Main HTML template
-├── package.json           # Dependencies and scripts
-├── vite.config.js         # Vite configuration
-├── tailwind.config.js     # TailwindCSS configuration
-└── postcss.config.js      # PostCSS configuration
+│   │   ├── Homepage.jsx      # Page d'accueil principale
+│   │   ├── Header.jsx        # En-tête de navigation
+│   │   ├── Footer.jsx        # Pied de page
+│   │   ├── TreeOfLife.jsx    # Arbre de qualifications
+│   │   └── Leaf.jsx          # Composant feuille pour l'arbre
+│   ├── App.jsx              # Composant principal
+│   ├── main.jsx             # Point d'entrée React
+│   └── index.css            # Imports TailwindCSS
+├── index.html               # Template HTML principal
+├── package.json             # Dépendances et scripts
+├── vite.config.js           # Configuration Vite
+├── tailwind.config.js       # Configuration TailwindCSS
+├── postcss.config.js        # Configuration PostCSS
+├── vercel.json              # Configuration Vercel
+└── .gitignore               # Fichiers à ignorer par Git
 ```
 
-## Setup Instructions
+## 🛠️ Installation et Setup
 
-1. Install dependencies:
+1. **Cloner le repository:**
+```bash
+git clone https://github.com/votre-username/portfolio-react.git
+cd portfolio-react
+```
+
+2. **Installer les dépendances:**
 ```bash
 npm install
 ```
 
-2. Start development server:
+3. **Démarrer le serveur de développement:**
 ```bash
 npm run dev
 ```
 
-3. Build for production:
+4. **Builder pour la production:**
 ```bash
 npm run build
 ```
+
+5. **Prévisualiser le build de production:**
+```bash
+npm run preview
+```
+
+## 📦 Déploiement
+
+### GitHub
+
+1. **Créer un nouveau repository sur GitHub**
+
+2. **Ajouter l'origine remote:**
+```bash
+git remote add origin https://github.com/votre-username/portfolio-react.git
+```
+
+3. **Commit et push:**
+```bash
+git add .
+git commit -m "Initial commit: Portfolio React setup"
+git push -u origin main
+```
+
+### Vercel (Recommandé)
+
+1. **Via l'interface Vercel:**
+   - Aller sur [vercel.com](https://vercel.com)
+   - Se connecter avec GitHub
+   - Cliquer sur "New Project"
+   - Sélectionner votre repository
+   - Vercel détectera automatiquement que c'est un projet Vite/React
+   - Cliquer sur "Deploy"
+
+2. **Via Vercel CLI:**
+```bash
+npm install -g vercel
+vercel
+```
+
+### Netlify (Alternative)
+
+1. **Via l'interface Netlify:**
+   - Aller sur [netlify.com](https://netlify.com)
+   - Se connecter avec GitHub
+   - Cliquer sur "New site from Git"
+   - Sélectionner votre repository
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+## 🎨 Technologies Utilisées
+
+- **React 18**: Framework JavaScript moderne
+- **Vite**: Outil de build ultra-rapide
+- **TailwindCSS**: Framework CSS utilitaire
+- **PostCSS**: Outil de transformation CSS
+- **ESLint**: Linter pour JavaScript/React
+
+## ✨ Fonctionnalités
+
+- ✅ Design responsive et moderne
+- ✅ Arbre de qualifications interactif
+- ✅ Animations et effets visuels
+- ✅ Configuration optimisée pour le déploiement
+- ✅ Structure modulaire et extensible
+- ✅ Support des polices Google Fonts
+- ✅ Effets de background animés
+
+## 🔧 Configuration
+
+Le projet est configuré avec:
+- **Vite** pour le développement et le build
+- **TailwindCSS** pour le styling
+- **Vercel** pour le déploiement automatique
+- **ESLint** pour la qualité du code
+
+## 📝 Scripts Disponibles
+
+- `npm run dev` - Démarrer le serveur de développement
+- `npm run build` - Builder pour la production
+- `npm run preview` - Prévisualiser le build de production
+- `npm run lint` - Vérifier le code avec ESLint
+
+## 🤝 Contribution
+
+1. Fork le projet
+2. Créer une branche (`git checkout -b feature/amazing-feature`)
+3. Commit les changements (`git commit -m 'Add amazing feature'`)
+4. Push sur la branche (`git push origin feature/amazing-feature`)
+5. Ouvrir une Pull Request
+
+## 📞 Contact
+
+Félix Grandet - [votre-email@exemple.com]
+
+Lien du projet: [https://github.com/votre-username/portfolio-react](https://github.com/votre-username/portfolio-react)
 
 ## Features
 
