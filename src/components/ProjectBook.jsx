@@ -11,8 +11,8 @@ const ProjectBook = ({ onNavigate }) => {
       id: 1,
       title: "Titanic",
       image: "/images/titanic.png",
-      technologies: ["PostgreSQL", "R", "Analyse de données"],
-      description: "Lors de ce projet les enseignants nous ont laissé à disposition une base de données composée de données récoltées sur le naufrage du Titanic. La problématique fut de trouver les facteurs ayant influencé la survie des passagers. Pour cela, nous devions modéliser puis implémenter une base de données que nous avons peuplée à partir des données mises à disposition.",
+      technologies: ["PostgreSQL", "R", "Big Data"],
+      description: "Ce projet s’inscrivait dans le cadre de notre initiation au Big Data. Après avoir sélectionné les données pertinentes en lien avec la problématique posée, nous avons procédé à leur extraction et à leur analyse. L’objectif était de replacer les résultats dans leur contexte afin de produire un rapport détaillé répondant de manière structurée à la question de départ.",
       teamSize: 2
     },
     {
@@ -20,7 +20,7 @@ const ProjectBook = ({ onNavigate }) => {
       title: "OpenFoodFact",
       image: "/images/food_fact.png", 
       technologies: ["PostgreSQL", "R", "Big Data"],
-      description: "Durant ce projet, nous devions exploiter une base de données disponible en ligne venant du site Open Food Fact composé de millions de données alimentaires. Après avoir trié les millions de données, nous avons réalisé un rendu détaillé pour notre étude composé de textes et de graphiques.",
+      description: "Dans le cadre de l’approfondissement de nos compétences en extraction et manipulation de données massives, nous avons travaillé sur une problématique précise portant sur des produits alimentaires, à partir de la base de données OpenFoodFacts, riche de plusieurs millions d’enregistrements. Ce projet nous a permis de développer une véritable expertise dans la sélection pertinente de données et leur exploitation statistique, en veillant à la rigueur des traitements effectués et à la clarté des visualisations utilisées pour la rédaction du rapport final.",
       teamSize: 2
     },
     {
@@ -28,7 +28,7 @@ const ProjectBook = ({ onNavigate }) => {
       title: "News Theme Attribution",
       image: "/images/news.png",
       technologies: ["Java", "Intelligence Artificielle", "Machine Learning"],
-      description: "Pour ce projet les enseignants nous avaient laissé une base de données composée d'un ensemble de nouvelles. Nous devions créer des algorithmes optimisés permettant à une intelligence artificielle, grâce à l'apprentissage profond, à automatiquement les ranger dans différentes catégories.",
+      description: "Dans le cadre de notre première approche de l’intelligence artificielle, nous avons réalisé un projet consistant à développer un algorithme basé sur un réseau de neurones. Ce modèle, utilisant l’apprentissage profond, avait pour objectif d’analyser automatiquement un texte présenté en entrée et de le classer dans la catégorie thématique appropriée, en fonction de son contenu.",
       teamSize: 2
     },
     {
@@ -36,30 +36,30 @@ const ProjectBook = ({ onNavigate }) => {
       title: "Jeu Faerun",
       image: "/images/faerun.png",
       technologies: ["Java", "Algorithmes", "Jeu de plateau"],
-      description: "Afin de finir notre année de programmation en Java nous devions réaliser un jeu de plateau tiré de l'univers de Dungeon & Dragon nommé \"jeu de Faerûn\". Jeu de plateau créé sans interface graphique mais comportant de nombreux algorithmes optimisés pour que le moteur de jeu soit le plus fluide et performant.",
+      description: "Dans le cadre de la validation de notre première année d’université ainsi que de nos acquis en programmation Java, nous avons eu pour projet de concevoir un jeu de plateau interactif en multijoueur. Ce jeu devait respecter un cahier des charges précis : il devait être modulable, c’est-à-dire capable de s’adapter dynamiquement au nombre de joueurs, et intégrer plusieurs algorithmes optimisés assurant les fonctionnalités essentielles telles que le lancement de la partie, le déplacement des pions, ou encore la capture de pièces adverses.",
       teamSize: 1
     },
     {
       id: 5,
       title: "IMB",
       image: "/images/imb.png",
-      technologies: ["HTML5", "CSS3", "Web Design"],
-      description: "Lors du début de ma première année en étude nous avons réalisé en groupe de 4 un site web d'une entreprise connue. Le but était de donner un nouvel aspect au site web pour donner envie à des étudiants de faire des stages dans cette entreprise.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Web Design"],
+      description: "L’un des premiers projets réalisés durant ma formation fut la création d’un site web complet. Ce site devait adopter un design moderne, attractif pour un public jeune, tout en intégrant une dimension écologique. Après avoir sélectionné une entreprise cible, nous avons conçu un site vitrine en HTML, CSS et JavaScript, en respectant les contraintes fonctionnelles et esthétiques imposées. Ce projet nous a permis d’acquérir les bases du développement front-end ainsi que de la conception orientée utilisateur.",
       teamSize: 4
     },
     {
       id: 6,
       title: "Stud'Life",
       image: "/images/studlife.png",
-      technologies: ["Java", "Application Desktop", "Gestion d'événements"],
-      description: "Lors de la fin de ma première année d'étude, j'ai réalisé en groupe de 5 une application Java de notre choix. Nous avons donc dû trouver une idée, savoir la communiquer auprès de nos enseignants lors de réunions puis la réaliser en 1 semaine. Notre application était destinée aux associations étudiantes pour leur faciliter la création, la communication et l'administration d'événements.",
+      technologies: ["Java", "Application Desktop", "Gestion d'événements", "Leadership"],
+      description: "Pour notre projet de fin de première année, nous avons eu la liberté de créer une application Java de notre choix, pour mettre en pratique ce que nous avions appris. En groupe de cinq, nous avons développé une application qui facilite la création, l’organisation et la gestion d’événements pour les associations étudiantes. Nous avons veillé à ce que l’application soit simple, légère et intuitive, pour que n’importe quelle association puisse l’adopter rapidement et l’utiliser facilement. Ce projet répond à un vrai besoin de simplification dans la gestion des événements associatifs, avec un bon potentiel pour être déployé largement.",
       teamSize: 5
     },
     {
       id: 7,
       title: "Cassiopea",
       image: "/images/cassiopea.png",
-      technologies: ["Wazuh", "PostgreSQL", "PmWiki", "Zabbix", "Apache2"],
+      technologies: ["Wazuh", "PostgreSQL", "PmWiki", "Zabbix", "Apache2", "Leadership"],
       description: "Durant ma deuxième année d'étude nous avions eu un projet de création et mise en place d'une infrastructure réseau. Lors de ce projet, j'ai eu l'occasion de pouvoir créer de zéro avec mes camarades un réseau complet avec de nombreux services (DNS, DHCP, PostgreSQL, Wiki) ainsi qu'une supervision du réseau (Zabbix, Wazuh).",
       teamSize: 5
     },
@@ -125,7 +125,6 @@ const ProjectBook = ({ onNavigate }) => {
       </div>
       
       <div className="text-center">
-        <p className="text-lg italic bg-gradient-to-r from-cyan-300 to-purple-400 bg-clip-text text-transparent font-semibold">Constellation du Lion</p>
         <p className="text-sm mt-2 text-cyan-200">Cliquez pour tourner la page →</p>
       </div>
     </div>
