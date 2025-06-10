@@ -43,7 +43,7 @@ const Homepage = ({ onNavigate }) => {
             
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
             Je m'appelle <span className="text-cyan-400 font-semibold">Félix GRANDET</span>,
-            Actuellement en étude d'informatique, mon parcours universitaire tourne autour de la programmation back-end ainsi que de la cybersécurité.
+            actuellement en étude d'informatique, mon parcours universitaire tourne autour de la programmation back-end ainsi que de la cybersécurité.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">Curieux et polyvalent, je m'intéresse à divers domaines tels que le sport, l'économie et les nouvelles technologies.            </p>
 
