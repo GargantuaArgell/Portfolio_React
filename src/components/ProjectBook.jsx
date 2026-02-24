@@ -70,7 +70,48 @@ const ProjectBook = ({ onNavigate }) => {
       technologies: ["TailwindCSS", "React", "SQLite", "NextJS", "Gestion de Projet", "Leadership", "Norme ISO"],
       description: "Pour nous permettre de mettre en pratique les connaissances apportées tout au long de notre deuxième année, nous avons formé des groupes de 6 personnes pour réaliser un projet pour promouvoir le patrimoine français. Ce projet nous a permis de développer nos compétences en gestion d'équipe et d'appliquer les normes ISO dans un contexte de développement web moderne.",
       teamSize: 6
+    },
+    {
+      id: 9,
+      title: "Pac-Man",
+      image: "/images/pacman.png",
+      technologies: ["C++", "IA", "Unreal Engine", "Perforce"],
+      description: "Dans le cadre de cet apprentissage des flux de production de jeux vidéo, l'objectif principal était la prise en main du moteur Unreal Engine et de ses mécanismes fondamentaux. Développé en C++ au sein d'une équipe de deux personnes, ce projet s'est concentré sur la conception de l'intelligence artificielle et des comportements de jeu. Mon rôle a consisté à programmer deux types d'ennemis (fantômes) distincts, nécessitant l'implémentation de mécaniques de déplacement et d'attaque spécifiques. Ce travail a permis de consolider la maîtrise de la gestion des collisions, des arbres de comportement (Behavior Trees) et de l'optimisation des ressources au sein d'un environnement 3D temps réel.",
+      teamSize: 2
+    },
+    {
+      id: 10,
+      title: "3D Shooter",
+      image: "/images/shooter.png",
+      technologies: ["C++", "IA", "Unreal Engine", "Perforce"],
+      description: "Ce projet avait pour objectif la conception d’un système d'affrontement entre deux équipes : l'une composées d'intelligences artificielles et l'autre composée d'une intelligence artificielle alliée et du joueur. Ce travail a nécessité une coordination rigoureuse via l'outil de gestion de versions Perforce. En tant que responsable de la partie logique et IA au sein du binôme, j'ai implémenté l'intégralité des arbres de comportement, la navigation des agents ainsi que les systèmes de tir. Cette réalisation a permis de valider des compétences avancées logique et la prise en main du logiciel Unreal Engine, tout en garantissant une synchronisation avec les assets visuels et l'interface de mon équipier.",
+      teamSize: 2
+    },
+    {
+      id: 11,
+      title: "IArio KArt",
+      image: "/images/iariokart.png",
+      technologies: ["C++", "IA", "Unreal Engine", "Perforce", "Algorithmique", "BFS", "DFS", "*Star", "Wall Follower"],
+      description: "IArio Kart est un projet de conception d'un environnement de simulation visant à comparer l'efficacité de divers algorithmes de recherche de chemin au sein de labyrinthes générés de manière procédurale. Développé en C++ avec l'outil de gestion de versions Perforce, ce travail a nécessité l'implémentation d'algorithmes. En tant que responsable de la logique algorithmique, j'ai programmé les systèmes de navigation permettant aux agents de résoudre les labyrinthes de manière autonome. Une communication continue avec les membres de l'équipe a été instaurée pour garantir l'homogénéité du code. Ce projet a permis de produire une analyse factuelle de la complexité et de la performance des algorithmes.",
+      teamSize: 4
+    },
+    {
+      id: 12,
+      title: "Cas Groupe Technovert inc.",
+      image: "/images/technovert.png",
+      technologies: ["Suite Microsoft"],
+      description: "Le cas Technovert Inc. consistait en une analyse critique de la structure organisationnelle et des modes de gestion d'une entreprise en pleine croissance. L'objectif principal est d'identifier les dysfonctionnements structurels afin de proposer un repositionnement stratégique et un réaménagement de la strucutre de l'entreprise. Travaillant en équipe via la suite Microsoft et Teams, lors de ce projet, chacun à réaliser tout le travail puis, après mise en commun et avoir argumenté ses réponses, nous avons structuré le document de réponse. Cette étude de cas a permis de mettre en pratique les principes de management, l'efficacité opérationnelle ainsi que la gestion des ressources humaines en contexte de crise de croissance.",
+      teamSize: 4
+    },
+    {
+      id: 13,
+      title: "CryptBox",
+      image: "/images/CryptBox.png",
+      technologies: ["Python", "Cryptographie", "AES", "HMAC"],
+      description: "Pour mettre en pratique nos connaissances en chiffrement et en sécurité des application, j'ai développé une application robuste dédiée au chiffrement et au déchiffrement sécurisés de fichiers et de répertoires. Développé en Python, l'objectif principal était l'implémentation de fonctions cryptographiques critiques pour garantir l'intégrité et la confidentialité des fichiers. En tant que développeur unique, j'ai intégré l'algorithme AES pour le chiffrement symétrique ainsi que le mécanisme HMAC pour l'authentification des messages et la vérification de l'absence de corruption des fichiers. Cette réalisation a permis de consolider des compétences précises en gestion de flux d'octets, en manipulation de clés cryptographiques.",
+      teamSize: 1
     }
+    
   ]
 
   const totalPages = projects.length + 2 // Cover + Summary + Projects

@@ -29,9 +29,16 @@ const Qualification = ({ onNavigate }) => {
     {
       title: "Objectifs Futurs",
       institution: "Évolution Professionnelle",
-      period: "2025 +",
+      period: "2026 +",
       description: "Poursuivre mon développement dans les domaines du développement informatique et de la cybersécurité tout en découvrant de nouvelles technologies et contribuer à des projets innovants.",
       skills: ["Programmation", "Leadership", "Innovation", "Veille Technologique"]
+    },
+        {
+      title: "Etude international",
+      institution: "Université du Québec à Chicoutimi",
+      period: "2026 +",
+      description: "Dans le cadre de ma dernière année d'étude au sein de l'IUT2 de Grenoble, j'ai eu l'occassion de partir au Canada pour suivre mes cours là-bas et valdier mon diplôme.",
+      skills: ["Python", "Unreal Engine", "Management", "Club universitaire", "Gestion de projet", "CyberSécurité", "IA"]
     },
     {
       title: "Stage Administration réseau chez Tivoly",
