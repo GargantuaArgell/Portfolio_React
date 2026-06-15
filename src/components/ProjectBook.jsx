@@ -21,7 +21,7 @@ const ProjectBook = ({ onNavigate }) => {
       title: "Kraken Redemption",
       image: "/images/kraken_redemption.png",
       technologies: ["Unreal Engine", "C++", "Game Design", "Git", "Perforce"],
-      description: "Développé dans le cadre d'un 'Wonderjam' de 48 heures, ce projet de jeu vidéo a été l'occasion de mettre à l'épreuve notre réactivité et notre capacité à concevoir un prototype fonctionnel sous contrainte de temps. Au sein d'une équipe de quatre développeurs, j'ai pris part à l'implémentation des mécaniques de jeu en C++ via Unreal Engine. Cette expérience a nécessité une coordination étroite au sein de l'équipe et une gestion rigoureuse du cycle de vie du projet, depuis la conception des mécaniques de base jusqu'à l'optimisation des assets. Ce projet a renforcé ma maîtrise de l'architecture logicielle propre aux moteurs de jeu et la gestion de version collaborative.",
+      description: "Développé dans le cadre d'un 'Wonderjam' de 48 heures où j'ai obtenu avec mon équipe la deuxième place, ce projet de jeu vidéo a été l'occasion de mettre à l'épreuve notre réactivité et notre capacité à concevoir un prototype fonctionnel sous contrainte de temps. Au sein d'une équipe de quatre développeurs, j'ai pris part à l'implémentation des mécaniques de jeu en C++ via Unreal Engine. Cette expérience a nécessité une coordination étroite au sein de l'équipe et une gestion rigoureuse du cycle de vie du projet, depuis la conception des mécaniques de base jusqu'à l'optimisation des assets. Ce projet a renforcé ma maîtrise de l'architecture logicielle propre aux moteurs de jeu et la gestion de version collaborative.",
       teamSize: 4
     },
     {
