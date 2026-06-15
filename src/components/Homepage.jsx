@@ -42,10 +42,10 @@ const Homepage = ({ onNavigate }) => {
             </h2>
             
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
-            Je m'appelle <span className="text-cyan-400 font-semibold">Félix GRANDET</span>,
-            actuellement en étude d'informatique, mon parcours universitaire tourne autour de la programmation back-end ainsi que de la cybersécurité.
+            Je m'appelle <span className="text-cyan-400 font-semibold">Félix GRANDET</span>
+            , élève-ingénieur à Nancy. Mon parcours académique et professionnel s'articule autour du développement back-end et de l'expertise en cybersécurité.
             </p>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">Curieux et polyvalent, je m'intéresse à divers domaines tels que le sport, l'économie et les nouvelles technologies.            </p>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">Curieux et polyvalent, je m'intéresse à des domaines variés tels que le sport, le spatial, l'économie et les nouvelles technologies.</p>
 
             {/* CV Button */}
             <button 

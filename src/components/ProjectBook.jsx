@@ -7,12 +7,109 @@ const ProjectBook = ({ onNavigate }) => {
   const [isAnimating, setIsAnimating] = useState(false)
 
   const projects = [
+    
     {
-      id: 1,
-      title: "Titanic",
-      image: "/images/titanic.png",
-      technologies: ["PostgreSQL", "R", "Big Data"],
-      description: "Ce projet s’inscrivait dans le cadre de notre initiation au Big Data. Après avoir sélectionné les données pertinentes en lien avec la problématique posée, nous avons procédé à leur extraction et à leur analyse. L’objectif était de replacer les résultats dans leur contexte afin de produire un rapport détaillé répondant de manière structurée à la question de départ.",
+      id: 15,
+      title: "Steganographie",
+      image: "/images/stega.png",
+      technologies: ["Python", "Cryptographie", "Traitement d'image"],
+      description: "Ce projet a été conçu pour approfondir ma compréhension des méthodes de dissimulation de données au sein de fichiers numériques. En utilisant Python, j'ai développé une solution permettant d'encoder des messages confidentiels dans des images sans altérer leur apparence visuelle, en manipulant les bits de poids faible (LSB - Least Significant Bit). Cette réalisation m'a permis de travailler concrètement sur la manipulation binaire, l'analyse de structures de fichiers et les principes fondamentaux de la stéganographie.",
+      teamSize: 1
+    },
+    {
+      id: 14,
+      title: "Kraken Redemption",
+      image: "/images/kraken_redemption.png",
+      technologies: ["Unreal Engine", "C++", "Game Design", "Git", "Perforce"],
+      description: "Développé dans le cadre d'un 'Wonderjam' de 48 heures, ce projet de jeu vidéo a été l'occasion de mettre à l'épreuve notre réactivité et notre capacité à concevoir un prototype fonctionnel sous contrainte de temps. Au sein d'une équipe de quatre développeurs, j'ai pris part à l'implémentation des mécaniques de jeu en C++ via Unreal Engine. Cette expérience a nécessité une coordination étroite au sein de l'équipe et une gestion rigoureuse du cycle de vie du projet, depuis la conception des mécaniques de base jusqu'à l'optimisation des assets. Ce projet a renforcé ma maîtrise de l'architecture logicielle propre aux moteurs de jeu et la gestion de version collaborative.",
+      teamSize: 4
+    },
+    {
+      id: 13,
+      title: "CryptBox",
+      image: "/images/CryptBox.png",
+      technologies: ["Python", "Cryptographie", "AES", "HMAC"],
+      description: "Pour mettre en pratique nos connaissances en chiffrement et en sécurité des application, j'ai développé une application robuste dédiée au chiffrement et au déchiffrement sécurisés de fichiers et de répertoires. Développé en Python, l'objectif principal était l'implémentation de fonctions cryptographiques critiques pour garantir l'intégrité et la confidentialité des fichiers. En tant que développeur unique, j'ai intégré l'algorithme AES pour le chiffrement symétrique ainsi que le mécanisme HMAC pour l'authentification des messages et la vérification de l'absence de corruption des fichiers. Cette réalisation a permis de consolider des compétences précises en gestion de flux d'octets, en manipulation de clés cryptographiques.",
+      teamSize: 1
+    },
+    {
+      id: 12,
+      title: "Cas Groupe Technovert inc.",
+      image: "/images/technovert.png",
+      technologies: ["Suite Microsoft"],
+      description: "Le cas Technovert Inc. consistait en une analyse critique de la structure organisationnelle et des modes de gestion d'une entreprise en pleine croissance. L'objectif principal est d'identifier les dysfonctionnements structurels afin de proposer un repositionnement stratégique et un réaménagement de la strucutre de l'entreprise. Travaillant en équipe via la suite Microsoft et Teams, lors de ce projet, chacun à réaliser tout le travail puis, après mise en commun et avoir argumenté ses réponses, nous avons structuré le document de réponse. Cette étude de cas a permis de mettre en pratique les principes de management, l'efficacité opérationnelle ainsi que la gestion des ressources humaines en contexte de crise de croissance.",
+      teamSize: 4
+    },
+    {
+      id: 11,
+      title: "IArio KArt",
+      image: "/images/iariokart.png",
+      technologies: ["C++", "IA", "Unreal Engine", "Perforce", "Algorithmique", "BFS", "DFS", "*Star", "Wall Follower"],
+      description: "IArio Kart est un projet de conception d'un environnement de simulation visant à comparer l'efficacité de divers algorithmes de recherche de chemin au sein de labyrinthes générés de manière procédurale. Développé en C++ avec l'outil de gestion de versions Perforce, ce travail a nécessité l'implémentation d'algorithmes. En tant que responsable de la logique algorithmique, j'ai programmé les systèmes de navigation permettant aux agents de résoudre les labyrinthes de manière autonome. Une communication continue avec les membres de l'équipe a été instaurée pour garantir l'homogénéité du code. Ce projet a permis de produire une analyse factuelle de la complexité et de la performance des algorithmes.",
+      teamSize: 4
+    },
+    {
+      id: 10,
+      title: "3D Shooter",
+      image: "/images/shooter.png",
+      technologies: ["C++", "IA", "Unreal Engine", "Perforce"],
+      description: "Ce projet avait pour objectif la conception d’un système d'affrontement entre deux équipes : l'une composées d'intelligences artificielles et l'autre composée d'une intelligence artificielle alliée et du joueur. Ce travail a nécessité une coordination rigoureuse via l'outil de gestion de versions Perforce. En tant que responsable de la partie logique et IA au sein du binôme, j'ai implémenté l'intégralité des arbres de comportement, la navigation des agents ainsi que les systèmes de tir. Cette réalisation a permis de valider des compétences avancées logique et la prise en main du logiciel Unreal Engine, tout en garantissant une synchronisation avec les assets visuels et l'interface de mon équipier.",
+      teamSize: 2
+    },
+    {
+      id: 9,
+      title: "Pac-Man",
+      image: "/images/pacman.png",
+      technologies: ["C++", "IA", "Unreal Engine", "Perforce"],
+      description: "Dans le cadre de cet apprentissage des flux de production de jeux vidéo, l'objectif principal était la prise en main du moteur Unreal Engine et de ses mécanismes fondamentaux. Développé en C++ au sein d'une équipe de deux personnes, ce projet s'est concentré sur la conception de l'intelligence artificielle et des comportements de jeu. Mon rôle a consisté à programmer deux types d'ennemis (fantômes) distincts, nécessitant l'implémentation de mécaniques de déplacement et d'attaque spécifiques. Ce travail a permis de consolider la maîtrise de la gestion des collisions, des arbres de comportement (Behavior Trees) et de l'optimisation des ressources au sein d'un environnement 3D temps réel.",
+      teamSize: 2
+    },
+    {
+      id: 8,
+      title: "PhareAway",
+      image: "/images/phareaway.png",
+      technologies: ["TailwindCSS", "React", "SQLite", "NextJS", "Gestion de Projet", "Leadership", "Norme ISO"],
+      description: "Pour nous permettre de mettre en pratique les connaissances apportées tout au long de notre deuxième année, nous avons formé des groupes de 6 personnes pour réaliser un projet pour promouvoir le patrimoine français. Ce projet nous a permis de développer nos compétences en gestion d'équipe et d'appliquer les normes ISO dans un contexte de développement web moderne.",
+      teamSize: 6
+    },
+    {
+      id: 7,
+      title: "Cassiopea",
+      image: "/images/cassiopea.png",
+      technologies: ["Wazuh", "PostgreSQL", "PmWiki", "Zabbix", "Apache2", "Leadership"],
+      description: "Durant ma deuxième année d'étude nous avions eu un projet de création et mise en place d'une infrastructure réseau. Lors de ce projet, j'ai eu l'occasion de pouvoir créer de zéro avec mes camarades un réseau complet avec de nombreux services (DNS, DHCP, PostgreSQL, Wiki) ainsi qu'une supervision du réseau (Zabbix, Wazuh).",
+      teamSize: 5
+    },
+    {
+      id: 6,
+      title: "Stud'Life",
+      image: "/images/studlife.png",
+      technologies: ["Java", "Application Desktop", "Gestion d'événements", "Leadership"],
+      description: "Pour notre projet de fin de première année, nous avons eu la liberté de créer une application Java de notre choix, pour mettre en pratique ce que nous avions appris. En groupe de cinq, nous avons développé une application qui facilite la création, l’organisation et la gestion d’événements pour les associations étudiantes. Nous avons veillé à ce que l’application soit simple, légère et intuitive, pour que n’importe quelle association puisse l’adopter rapidement et l’utiliser facilement. Ce projet répond à un vrai besoin de simplification dans la gestion des événements associatifs, avec un bon potentiel pour être déployé largement.",
+      teamSize: 5
+    },
+    {
+      id: 5,
+      title: "IMB",
+      image: "/images/imb.png",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Web Design"],
+      description: "L’un des premiers projets réalisés durant ma formation fut la création d’un site web complet. Ce site devait adopter un design moderne, attractif pour un public jeune, tout en intégrant une dimension écologique. Après avoir sélectionné une entreprise cible, nous avons conçu un site vitrine en HTML, CSS et JavaScript, en respectant les contraintes fonctionnelles et esthétiques imposées. Ce projet nous a permis d’acquérir les bases du développement front-end ainsi que de la conception orientée utilisateur.",
+      teamSize: 4
+    },
+    {
+      id: 4,
+      title: "Jeu Faerun",
+      image: "/images/faerun.png",
+      technologies: ["Java", "Algorithmes", "Jeu de plateau"],
+      description: "Dans le cadre de la validation de notre première année d’université ainsi que de nos acquis en programmation Java, nous avons eu pour projet de concevoir un jeu de plateau interactif en multijoueur. Ce jeu devait respecter un cahier des charges précis : il devait être modulable, c’est-à-dire capable de s’adapter dynamiquement au nombre de joueurs, et intégrer plusieurs algorithmes optimisés assurant les fonctionnalités essentielles telles que le lancement de la partie, le déplacement des pions, ou encore la capture de pièces adverses.",
+      teamSize: 1
+    },
+    {
+      id: 3,
+      title: "News Theme Attribution",
+      image: "/images/news.png",
+      technologies: ["Java", "Intelligence Artificielle", "Machine Learning"],
+      description: "Dans le cadre de notre première approche de l’intelligence artificielle, nous avons réalisé un projet consistant à développer un algorithme basé sur un réseau de neurones. Ce modèle, utilisant l’apprentissage profond, avait pour objectif d’analyser automatiquement un texte présenté en entrée et de le classer dans la catégorie thématique appropriée, en fonction de son contenu.",
       teamSize: 2
     },
     {
@@ -24,92 +121,12 @@ const ProjectBook = ({ onNavigate }) => {
       teamSize: 2
     },
     {
-      id: 3,
-      title: "News Theme Attribution",
-      image: "/images/news.png",
-      technologies: ["Java", "Intelligence Artificielle", "Machine Learning"],
-      description: "Dans le cadre de notre première approche de l’intelligence artificielle, nous avons réalisé un projet consistant à développer un algorithme basé sur un réseau de neurones. Ce modèle, utilisant l’apprentissage profond, avait pour objectif d’analyser automatiquement un texte présenté en entrée et de le classer dans la catégorie thématique appropriée, en fonction de son contenu.",
+      id: 1,
+      title: "Titanic",
+      image: "/images/titanic.png",
+      technologies: ["PostgreSQL", "R", "Big Data"],
+      description: "Ce projet s’inscrivait dans le cadre de notre initiation au Big Data. Après avoir sélectionné les données pertinentes en lien avec la problématique posée, nous avons procédé à leur extraction et à leur analyse. L’objectif était de replacer les résultats dans leur contexte afin de produire un rapport détaillé répondant de manière structurée à la question de départ.",
       teamSize: 2
-    },
-    {
-      id: 4,
-      title: "Jeu Faerun",
-      image: "/images/faerun.png",
-      technologies: ["Java", "Algorithmes", "Jeu de plateau"],
-      description: "Dans le cadre de la validation de notre première année d’université ainsi que de nos acquis en programmation Java, nous avons eu pour projet de concevoir un jeu de plateau interactif en multijoueur. Ce jeu devait respecter un cahier des charges précis : il devait être modulable, c’est-à-dire capable de s’adapter dynamiquement au nombre de joueurs, et intégrer plusieurs algorithmes optimisés assurant les fonctionnalités essentielles telles que le lancement de la partie, le déplacement des pions, ou encore la capture de pièces adverses.",
-      teamSize: 1
-    },
-    {
-      id: 5,
-      title: "IMB",
-      image: "/images/imb.png",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Web Design"],
-      description: "L’un des premiers projets réalisés durant ma formation fut la création d’un site web complet. Ce site devait adopter un design moderne, attractif pour un public jeune, tout en intégrant une dimension écologique. Après avoir sélectionné une entreprise cible, nous avons conçu un site vitrine en HTML, CSS et JavaScript, en respectant les contraintes fonctionnelles et esthétiques imposées. Ce projet nous a permis d’acquérir les bases du développement front-end ainsi que de la conception orientée utilisateur.",
-      teamSize: 4
-    },
-    {
-      id: 6,
-      title: "Stud'Life",
-      image: "/images/studlife.png",
-      technologies: ["Java", "Application Desktop", "Gestion d'événements", "Leadership"],
-      description: "Pour notre projet de fin de première année, nous avons eu la liberté de créer une application Java de notre choix, pour mettre en pratique ce que nous avions appris. En groupe de cinq, nous avons développé une application qui facilite la création, l’organisation et la gestion d’événements pour les associations étudiantes. Nous avons veillé à ce que l’application soit simple, légère et intuitive, pour que n’importe quelle association puisse l’adopter rapidement et l’utiliser facilement. Ce projet répond à un vrai besoin de simplification dans la gestion des événements associatifs, avec un bon potentiel pour être déployé largement.",
-      teamSize: 5
-    },
-    {
-      id: 7,
-      title: "Cassiopea",
-      image: "/images/cassiopea.png",
-      technologies: ["Wazuh", "PostgreSQL", "PmWiki", "Zabbix", "Apache2", "Leadership"],
-      description: "Durant ma deuxième année d'étude nous avions eu un projet de création et mise en place d'une infrastructure réseau. Lors de ce projet, j'ai eu l'occasion de pouvoir créer de zéro avec mes camarades un réseau complet avec de nombreux services (DNS, DHCP, PostgreSQL, Wiki) ainsi qu'une supervision du réseau (Zabbix, Wazuh).",
-      teamSize: 5
-    },
-    {
-      id: 8,
-      title: "PhareAway",
-      image: "/images/phareaway.png",
-      technologies: ["TailwindCSS", "React", "SQLite", "NextJS", "Gestion de Projet", "Leadership", "Norme ISO"],
-      description: "Pour nous permettre de mettre en pratique les connaissances apportées tout au long de notre deuxième année, nous avons formé des groupes de 6 personnes pour réaliser un projet pour promouvoir le patrimoine français. Ce projet nous a permis de développer nos compétences en gestion d'équipe et d'appliquer les normes ISO dans un contexte de développement web moderne.",
-      teamSize: 6
-    },
-    {
-      id: 9,
-      title: "Pac-Man",
-      image: "/images/pacman.png",
-      technologies: ["C++", "IA", "Unreal Engine", "Perforce"],
-      description: "Dans le cadre de cet apprentissage des flux de production de jeux vidéo, l'objectif principal était la prise en main du moteur Unreal Engine et de ses mécanismes fondamentaux. Développé en C++ au sein d'une équipe de deux personnes, ce projet s'est concentré sur la conception de l'intelligence artificielle et des comportements de jeu. Mon rôle a consisté à programmer deux types d'ennemis (fantômes) distincts, nécessitant l'implémentation de mécaniques de déplacement et d'attaque spécifiques. Ce travail a permis de consolider la maîtrise de la gestion des collisions, des arbres de comportement (Behavior Trees) et de l'optimisation des ressources au sein d'un environnement 3D temps réel.",
-      teamSize: 2
-    },
-    {
-      id: 10,
-      title: "3D Shooter",
-      image: "/images/shooter.png",
-      technologies: ["C++", "IA", "Unreal Engine", "Perforce"],
-      description: "Ce projet avait pour objectif la conception d’un système d'affrontement entre deux équipes : l'une composées d'intelligences artificielles et l'autre composée d'une intelligence artificielle alliée et du joueur. Ce travail a nécessité une coordination rigoureuse via l'outil de gestion de versions Perforce. En tant que responsable de la partie logique et IA au sein du binôme, j'ai implémenté l'intégralité des arbres de comportement, la navigation des agents ainsi que les systèmes de tir. Cette réalisation a permis de valider des compétences avancées logique et la prise en main du logiciel Unreal Engine, tout en garantissant une synchronisation avec les assets visuels et l'interface de mon équipier.",
-      teamSize: 2
-    },
-    {
-      id: 11,
-      title: "IArio KArt",
-      image: "/images/iariokart.png",
-      technologies: ["C++", "IA", "Unreal Engine", "Perforce", "Algorithmique", "BFS", "DFS", "*Star", "Wall Follower"],
-      description: "IArio Kart est un projet de conception d'un environnement de simulation visant à comparer l'efficacité de divers algorithmes de recherche de chemin au sein de labyrinthes générés de manière procédurale. Développé en C++ avec l'outil de gestion de versions Perforce, ce travail a nécessité l'implémentation d'algorithmes. En tant que responsable de la logique algorithmique, j'ai programmé les systèmes de navigation permettant aux agents de résoudre les labyrinthes de manière autonome. Une communication continue avec les membres de l'équipe a été instaurée pour garantir l'homogénéité du code. Ce projet a permis de produire une analyse factuelle de la complexité et de la performance des algorithmes.",
-      teamSize: 4
-    },
-    {
-      id: 12,
-      title: "Cas Groupe Technovert inc.",
-      image: "/images/technovert.png",
-      technologies: ["Suite Microsoft"],
-      description: "Le cas Technovert Inc. consistait en une analyse critique de la structure organisationnelle et des modes de gestion d'une entreprise en pleine croissance. L'objectif principal est d'identifier les dysfonctionnements structurels afin de proposer un repositionnement stratégique et un réaménagement de la strucutre de l'entreprise. Travaillant en équipe via la suite Microsoft et Teams, lors de ce projet, chacun à réaliser tout le travail puis, après mise en commun et avoir argumenté ses réponses, nous avons structuré le document de réponse. Cette étude de cas a permis de mettre en pratique les principes de management, l'efficacité opérationnelle ainsi que la gestion des ressources humaines en contexte de crise de croissance.",
-      teamSize: 4
-    },
-    {
-      id: 13,
-      title: "CryptBox",
-      image: "/images/CryptBox.png",
-      technologies: ["Python", "Cryptographie", "AES", "HMAC"],
-      description: "Pour mettre en pratique nos connaissances en chiffrement et en sécurité des application, j'ai développé une application robuste dédiée au chiffrement et au déchiffrement sécurisés de fichiers et de répertoires. Développé en Python, l'objectif principal était l'implémentation de fonctions cryptographiques critiques pour garantir l'intégrité et la confidentialité des fichiers. En tant que développeur unique, j'ai intégré l'algorithme AES pour le chiffrement symétrique ainsi que le mécanisme HMAC pour l'authentification des messages et la vérification de l'absence de corruption des fichiers. Cette réalisation a permis de consolider des compétences précises en gestion de flux d'octets, en manipulation de clés cryptographiques.",
-      teamSize: 1
     }
     
   ]

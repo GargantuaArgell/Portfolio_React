@@ -166,7 +166,7 @@ const TreeOfLife = ({ qualifications = [] }) => {
                     {/* Barre de progression réaliste 
                     {Math.round((visibleLeaves.size / qualifications.length) * 100)}%
                     */}
-                    65%
+                    75%
                   </div>
                   <div className="w-12 h-1 bg-gray-700 rounded-full mt-2 overflow-hidden">
                     <div 

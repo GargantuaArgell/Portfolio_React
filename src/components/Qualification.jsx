@@ -30,35 +30,41 @@ const Qualification = ({ onNavigate }) => {
       title: "Objectifs Futurs",
       institution: "Évolution Professionnelle",
       period: "2026 +",
-      description: "Poursuivre mon développement dans les domaines du développement informatique et de la cybersécurité tout en découvrant de nouvelles technologies et contribuer à des projets innovants.",
+      description: "Aspirant à conjuguer expertise en développement logiciel et enjeux de cybersécurité, je souhaite mettre mes compétences au service de projets innovants, tout en m'investissant dans une veille technologique constante pour anticiper les défis numériques de demain.",
       skills: ["Programmation", "Leadership", "Innovation", "Veille Technologique"]
+    },        {
+      title: "Ecole d'ingénieur",
+      institution: "IMT Nancy",
+      period: "Début aout 2026",
+      description: "Afin de consolider mon expertise technique et de donner une dimension concrète à mon projet professionnel, j'ai intégré le cursus FISEA de l'IMT Nancy. Ce parcours en alternance représente une étape clé dans ma spécialisation en cybersécurité, me permettant d'allier exigence académique et immersion opérationnelle au sein du groupe BPCE.",
+      skills: ["Gestion de projet", "CyberSécurité", "IA"]
     },
         {
-      title: "Etude international",
+      title: "Etude international : Canada",
       institution: "Université du Québec à Chicoutimi",
-      period: "2026 +",
-      description: "Dans le cadre de ma dernière année d'étude au sein de l'IUT2 de Grenoble, j'ai eu l'occassion de partir au Canada pour suivre mes cours là-bas et valdier mon diplôme.",
+      period: "Aout 2025 - Mai 2026",
+      description: "Dans le cadre de ma dernière année à l'IUT2 de Grenoble, j'ai consolidé mon cursus académique par une mobilité internationale au Canada. Cette expérience m'a permis d'appréhender de nouvelles méthodes de travail et d'enrichir mon profil technique dans un environnement académique différent.",
       skills: ["Python", "Unreal Engine", "Management", "Club universitaire", "Gestion de projet", "CyberSécurité", "IA"]
     },
     {
       title: "Stage Administration réseau chez Tivoly",
       institution: "Entreprise internationale",
       period: "Avril 2025 - Juin 2025",
-      description: "Première expérience en administration réseau. Réalisation de missions sensibles, incluant la création et la mise en place d’un Bastion informatique, ainsi que le développement de scripts d’automatisation pour optimiser les processus internes de l’entreprise.",
+      description: "Première expérience significative en administration réseau, marquée par la gestion de missions à haute criticité. J'ai notamment piloté la conception et le déploiement d’un bastion d'administration sécurisé, tout en concevant des outils d'automatisation (scripts) destinés à optimiser les processus opérationnels de l'organisation.",
       skills: ["Microsoft 365", "Bastion informatique", "Python", "PowerShell"]
     },
     {
       title: "BUT Informatique - Parcours Déploiement d'application Communicantes et Sécurisées",
       institution: "IUT2 de Grenoble",
       period: "2023 - Présent",
-      description: "Formation technique complète en développement logiciel, bases de données, réseaux et gestion de projet. Nombreux projets réalisés en conditions simulées, avec un encadrement régulier et des livrables professionnels.",
+      description: "Formation technique approfondie couvrant l'ingénierie logicielle, la gestion des données, les architectures réseau et le pilotage de projet. Mon cursus a été rythmé par la réalisation de projets complexes en conditions réelles, exigeant rigueur méthodologique, travail collaboratif et conformité aux standards de livraison professionnels.",
       skills: ["Java", "Python", "SQL", "HTML/CSS", "JavaScript", "Gestion de projet", "C++"]
     },
     {
       title: "Baccalauréat Scientifique",
       institution: "Lycée Général",
       period: "2019 - 2023",
-      description: "Formation généraliste avec spécialisation en mathématiques et sciences numériques. Acquisition des fondements logiques et analytiques nécessaires à la pratique de l’informatique.",
+      description: "Parcours académique généraliste orienté vers les sciences mathématiques et numériques. Cette formation m'a permis d'acquérir les fondements logiques et la rigueur analytique indispensables à l'exercice des métiers de l'ingénierie informatique.",
       skills: ["Mathématiques", "Sciences Numériques", "Logique", "Algorithmique de base"]
     }
   ]
