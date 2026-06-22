@@ -139,7 +139,7 @@ const NavigationMenu = ({ active = "profil", onNavigate }) => {
           <ul className="text-xs mt-2 space-y-1">
             <li>• <strong>Profil</strong> : Mon introduction</li>
             <li>• <strong>Projet</strong> : Mes réalisations</li>
-            <li>• <strong>Qualification</strong> : Mon parcours</li>
+            <li>• <strong>Parcours</strong> : Mon parcours</li>
             <li>• <strong>Contact</strong> : Me contacter</li>
           </ul>
           <button 

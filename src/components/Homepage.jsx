@@ -43,9 +43,9 @@ const Homepage = ({ onNavigate }) => {
             
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
             Je m'appelle <span className="text-cyan-400 font-semibold">Félix GRANDET</span>
-            , élève-ingénieur à Nancy. Mon parcours académique et professionnel s'articule autour du développement back-end et de l'expertise en cybersécurité.
+            , élève-ingénieur à IMT Atlantique en recherche d'une alternance. Mon parcours académique et professionnel s'articule autour du développement back-end et de l'expertise en cybersécurité.
             </p>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">Curieux et polyvalent, je m'intéresse à des domaines variés tels que le sport, le spatial, l'économie et les nouvelles technologies.</p>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">Mon intérêt pour des secteurs aux enjeux complexes, tels que l'économie, l'aérospatial ou les nouvelles technologies (IA, Blockchain), structure mon esprit d'analyse. Cette rigueur me permet d'appréhender rapidement des environnements variés afin d'être plus vite opérationnel.</p>
 
             {/* CV Button */}
             <button 

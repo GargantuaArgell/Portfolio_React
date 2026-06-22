@@ -34,9 +34,9 @@ const Qualification = ({ onNavigate }) => {
       skills: ["Programmation", "Leadership", "Innovation", "Veille Technologique"]
     },        {
       title: "Ecole d'ingénieur",
-      institution: "IMT Nancy",
+      institution: "IMT Atlantique",
       period: "Début aout 2026",
-      description: "Afin de consolider mon expertise technique et de donner une dimension concrète à mon projet professionnel, j'ai intégré le cursus FISEA de l'IMT Nancy. Ce parcours en alternance représente une étape clé dans ma spécialisation en cybersécurité, me permettant d'allier exigence académique et immersion opérationnelle au sein du groupe BPCE.",
+      description: "Afin de consolider mon socle technique acquis à l'IUT2 de Grenoble et lors de ma mobilité au Canada, j'ai intégré le cycle ingénieur de l'IMT Atlantique. Ce parcours en alternance représente une étape clé dans ma spécialisation en cybersécurité, me permettant d'allier exigence académique et immersion opérationnelle dans le milieu de l'enteprise.",
       skills: ["Gestion de projet", "CyberSécurité", "IA"]
     },
         {
