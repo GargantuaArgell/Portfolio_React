@@ -7,7 +7,7 @@ const SocialMediaButtons = ({ className = "" }) => {
         {/* LinkedIn */}
         <li className="group relative">
           <a
-            href="https://www.linkedin.com/in/f%C3%A9lix-grandet-b94b9236a/"
+            href="https://www.linkedin.com/in/f%C3%A9lix-grandet-55a251403/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
