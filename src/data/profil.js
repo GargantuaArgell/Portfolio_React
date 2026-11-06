@@ -35,7 +35,7 @@ export const preuves = [
   { titre: 'Échange à l’UQAC', detail: 'Canada, 2025-2026', lien: '/parcours' },
 ]
 
-export const categories = ['Cybersécurité', 'Réseau', 'IA', 'Jeu vidéo', 'Web', 'Logiciel', 'Données', 'Management']
+export const categories = ['Cybersécurité', 'Réseau', 'IA', 'Finance', 'Jeu vidéo', 'Web', 'Logiciel', 'Données', 'Management']
 
 export const projets = [
   {
@@ -79,6 +79,16 @@ export const projets = [
     technologies: ['Python', 'Cryptographie', "Traitement d'image"],
     resume: 'Messages dissimulés dans des images par les bits de poids faible.',
     description: "Ce projet a été conçu pour approfondir ma compréhension des méthodes de dissimulation de données au sein de fichiers numériques. En utilisant Python, j'ai développé une solution permettant d'encoder des messages confidentiels dans des images sans altérer leur apparence visuelle, en manipulant les bits de poids faible (LSB, Least Significant Bit). Cette réalisation m'a permis de travailler concrètement sur la manipulation binaire, l'analyse de structures de fichiers et les principes fondamentaux de la stéganographie.",
+  },
+  {
+    slug: 'bot-de-trading',
+    titre: 'Bot de trading',
+    categorie: 'Finance',
+    equipe: 1,
+    contexte: 'Projet personnel en cours',
+    technologies: ['Python', 'Trading algorithmique', 'API', 'Coinbase', 'Polygon'],
+    resume: 'Bot Python qui applique plusieurs stratégies de trading, en cours de développement.',
+    description: "Projet personnel en cours de développement : un bot de trading en Python capable d'appliquer plusieurs stratégies, comme le croisement de moyennes mobiles et le retour à la moyenne. Il se connecte à Coinbase et à la blockchain Polygon, ce qui impose une gestion rigoureuse des données confidentielles comme les clés d'accès.",
   },
   {
     slug: 'kraken-redemption',

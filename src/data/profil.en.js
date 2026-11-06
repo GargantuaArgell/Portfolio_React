@@ -5,7 +5,7 @@ export const personneEn = {
   poste: 'Smart Grid Project Manager',
   cv: '/images/Curriculum-Vitae-GRANDET-FELIX-EN.pdf',
   accroche: 'Engineering student at IMT Atlantique, apprentice at Enedis Labs',
-  statut: 'Apprentice at Enedis Labs',
+  statut: 'Seeking a 9 to 12-week international internship from May 2027',
   bio: [
     "I am an engineering student at IMT Atlantique, on the Brest campus, and an apprentice at Enedis Labs as a Smart Grid Project Manager. My academic and professional background centres on back-end development and cybersecurity.",
     'My interest in sectors with complex challenges (economics, aerospace, AI, blockchain) shapes my analytical mindset. This rigour helps me quickly understand varied environments and become operational faster.',
@@ -33,6 +33,7 @@ export const categoriesEn = {
   Logiciel: 'Software',
   Données: 'Data',
   Management: 'Management',
+  Finance: 'Finance',
 }
 
 export const technologiesEn = {
@@ -49,6 +50,7 @@ export const technologiesEn = {
   'Jeu de plateau': 'Board game',
   'Intelligence artificielle': 'Artificial intelligence',
   'Suite Microsoft': 'Microsoft Office',
+  'Trading algorithmique': 'Algorithmic trading',
 }
 
 export const projetsEn = {
@@ -70,6 +72,12 @@ export const projetsEn = {
     titre: 'Steganography',
     resume: 'Messages hidden in images through their least significant bits.',
     description: 'This project was designed to deepen my understanding of how data can be concealed inside digital files. Using Python, I developed a solution that encodes confidential messages in images without altering their appearance, by manipulating the least significant bits (LSB). This gave me hands-on practice with binary manipulation, file structure analysis and the fundamentals of steganography.',
+  },
+  'bot-de-trading': {
+    titre: 'Trading bot',
+    contexte: 'Ongoing personal project',
+    resume: 'A Python bot applying several trading strategies, currently in development.',
+    description: 'An ongoing personal project: a Python trading bot able to apply several strategies, such as moving average crossover and mean reversion. It connects to Coinbase and the Polygon blockchain, which requires rigorous handling of confidential data such as access keys.',
   },
   'kraken-redemption': {
     resume: 'A video game created in 48 hours, second place at the Wonderjam.',
