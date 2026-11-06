@@ -21,6 +21,11 @@ export const personne = {
     "Je suis élève-ingénieur à IMT Atlantique, sur le campus de Brest, et alternant chez Enedis Labs au poste de Cheffe de Projet Smartgrids. Mon parcours académique et professionnel s'articule autour du développement back-end et de la cybersécurité.",
     "Mon intérêt pour des secteurs aux enjeux complexes (économie, aérospatial, IA, blockchain) structure mon esprit d'analyse. Cette rigueur me permet d'appréhender rapidement des environnements variés afin d'être plus vite opérationnel.",
   ],
+  nft: {
+    titre: 'Mon NFT de la collection « Little Nightmare »',
+    texte: 'Une œuvre numérique dont la propriété est enregistrée sur une blockchain grâce à la technologie des NFT.',
+    alt: 'Illustration de profil : le NFT de Félix Grandet, de la collection Little Nightmare',
+  },
 }
 
 export const preuves = [

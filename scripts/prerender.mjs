@@ -13,24 +13,29 @@ const gabarit = await readFile(path.join(dist, 'index.html'), 'utf8')
 
 const echapper = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;')
 
-function page(chemin, { noindex = false } = {}) {
+function page(url, { noindex = false } = {}) {
   const robots = noindex ? '\n    <meta name="robots" content="noindex" />' : ''
+  const langue = url.startsWith('/en') ? 'en' : 'fr'
+  const html = noindex ? '<html lang="fr" data-erreur>' : `<html lang="${langue}">`
   return gabarit
-    .replace(/<title>.*?<\/title>/, () => `<title>${echapper(meta(chemin).titre)}</title>`)
-    .replace('</head>', () => `${noindex ? '' : `  ${balisesHead(chemin)}\n  `}${robots}</head>`)
-    .replace('<div id="root"></div>', () => `<div id="root">${render(chemin)}</div>`)
+    .replace('<html lang="fr">', () => html)
+    .replace(/<title>.*?<\/title>/, () => `<title>${echapper(meta(url).titre)}</title>`)
+    .replace('</head>', () => `${noindex ? '' : `  ${balisesHead(url)}\n  `}${robots}</head>`)
+    .replace('<div id="root"></div>', () => `<div id="root">${render(url)}</div>`)
 }
 
-for (const chemin of routes) {
-  const dossier = path.join(dist, chemin)
+for (const url of routes) {
+  const dossier = path.join(dist, url)
   await mkdir(dossier, { recursive: true })
-  await writeFile(path.join(dossier, 'index.html'), page(chemin))
+  await writeFile(path.join(dossier, 'index.html'), page(url))
 }
 
 await writeFile(path.join(dist, '404.html'), page('/404', { noindex: true }))
 await writeFile(path.join(dist, 'sitemap.xml'), sitemapXml())
-await writeFile(path.join(dist, 'llms.txt'), llmsTxt())
-await writeFile(path.join(dist, 'cv.md'), cvMd())
+await writeFile(path.join(dist, 'llms.txt'), llmsTxt('fr'))
+await writeFile(path.join(dist, 'cv.md'), cvMd('fr'))
+await writeFile(path.join(dist, 'en', 'llms.txt'), llmsTxt('en'))
+await writeFile(path.join(dist, 'en', 'cv.md'), cvMd('en'))
 await rm(ssr, { recursive: true, force: true })
 
 console.log(`${routes.length} pages générées`)

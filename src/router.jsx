@@ -1,36 +1,43 @@
-import React, { createContext, useCallback, useContext, useEffect, useState } from 'react'
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import { analyser, localiser, normaliser, textes } from './i18n'
+import { contenu } from './data/contenu'
 
-const Contexte = createContext({ chemin: '/', naviguer: () => {} })
-
-export const normaliser = (chemin) => (chemin.length > 1 ? chemin.replace(/\/+$/, '') : chemin) || '/'
+const Contexte = createContext(null)
 
 export function Routeur({ cheminInitial, children }) {
-  const [chemin, setChemin] = useState(normaliser(cheminInitial))
+  const [url, setUrl] = useState(normaliser(cheminInitial))
 
   useEffect(() => {
-    const surRetour = () => setChemin(normaliser(window.location.pathname))
+    const surRetour = () => setUrl(normaliser(window.location.pathname))
     window.addEventListener('popstate', surRetour)
     return () => window.removeEventListener('popstate', surRetour)
   }, [])
 
   const naviguer = useCallback((cible) => {
     window.history.pushState(null, '', cible)
-    setChemin(normaliser(cible))
+    setUrl(normaliser(cible))
     window.scrollTo(0, 0)
   }, [])
 
-  return <Contexte.Provider value={{ chemin, naviguer }}>{children}</Contexte.Provider>
+  const valeur = useMemo(() => {
+    const { langue, chemin } = analyser(url)
+    return { langue, chemin, naviguer, t: textes[langue], donnees: contenu(langue) }
+  }, [url, naviguer])
+
+  return <Contexte.Provider value={valeur}>{children}</Contexte.Provider>
 }
 
 export const useRoute = () => useContext(Contexte)
 
-export function Lien({ to, onClick, ...props }) {
-  const { naviguer } = useRoute()
+// `to` est le chemin interne ; `langue` permet de viser l'autre version d'une page.
+export function Lien({ to, langue, onClick, ...props }) {
+  const route = useRoute()
+  const href = localiser(to, langue ?? route.langue)
   const surClic = (e) => {
     onClick?.(e)
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
     e.preventDefault()
-    naviguer(to)
+    route.naviguer(href)
   }
-  return <a href={to} onClick={surClic} {...props} />
+  return <a href={href} onClick={surClic} {...props} />
 }

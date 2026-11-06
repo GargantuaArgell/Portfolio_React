@@ -1,12 +1,14 @@
 import React from 'react'
+import { useRoute } from '../router'
 
 export default function Visuel({ projet, grand = false }) {
+  const { t } = useRoute()
   if (projet.image) {
     return (
       <img
         className={grand ? 'visuel visuel-grand' : 'visuel'}
         src={projet.image}
-        alt={`Aperçu du projet ${projet.titre}`}
+        alt={t.apercu(projet.titre)}
         loading={grand ? 'eager' : 'lazy'}
         decoding="async"
       />

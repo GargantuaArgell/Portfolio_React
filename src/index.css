@@ -71,11 +71,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   border-bottom: 1px solid var(--bord);
 }
 .marque { color: #fff; font-weight: 700; font-size: 1.1rem; }
+.entete-droite { display: flex; align-items: center; gap: 10px; }
 .menu { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; }
 .menu a { display: flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 8px; color: #d1d5db; transition: color .2s, background .2s; }
 .menu a:hover { color: #fff; background: var(--carte); }
 .menu a[aria-current='page'] { color: var(--cyan); }
 .menu svg { display: none; width: 22px; height: 22px; fill: currentColor; }
+
+/* Menu des langues */
+.langue { position: relative; }
+.langue-bouton { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: #d1d5db; transition: color .2s, background .2s; }
+.langue-bouton:hover, .langue-bouton[aria-expanded='true'] { color: var(--cyan); background: var(--carte); }
+.langue-bouton svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.4; }
+.langue-liste { position: absolute; z-index: 25; top: calc(100% + 8px); right: 0; min-width: 140px; margin: 0; padding: 6px; list-style: none; background: #0f1220; border: 1px solid var(--bord); border-radius: 10px; box-shadow: 0 10px 28px rgb(0 0 0 / 0.5); }
+.langue-liste[hidden] { display: none; }
+.langue-liste a { display: block; padding: 7px 10px; border-radius: 6px; color: #d1d5db; }
+.langue-liste a:hover { color: #fff; background: var(--carte); }
+.langue-liste a[aria-current] { color: var(--cyan); }
 
 /* Accueil */
 .heros { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: center; margin-top: 8px; }
@@ -89,6 +101,33 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   object-fit: cover;
   object-position: center 22%;
   box-shadow: 0 0 0 3px rgb(255 255 255 / 0.2), 0 0 36px 8px rgb(168 85 247 / 0.45), 0 0 64px 14px rgb(6 182 212 / 0.28);
+}
+.nft { position: relative; display: grid; justify-items: center; }
+.nft-bouton { display: block; padding: 0; border-radius: 50%; cursor: help; }
+.nft-infobulle {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 12px);
+  left: 50%;
+  width: min(300px, calc(100vw - 32px));
+  padding: 10px 14px;
+  background: #0f1220;
+  border: 1px solid rgb(168 85 247 / 0.55);
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 0.5);
+  color: var(--doux);
+  font-size: .9rem;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -4px);
+  transition: opacity .2s, transform .2s, visibility .2s;
+}
+.nft-infobulle strong { display: block; margin-bottom: 3px; color: #fff; font-weight: 600; }
+.nft-ouvert .nft-infobulle, .nft-bouton:focus-visible + .nft-infobulle { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+@media (hover: hover) {
+  .nft:hover .nft-infobulle { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
 .bouton { display: inline-block; padding: 11px 20px; border: 1px solid rgb(255 255 255 / 0.28); border-radius: 8px; color: #fff; font-weight: 600; transition: transform .2s, background .2s; }
@@ -212,12 +251,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   .arbre > li::after, .arbre > li:nth-child(even)::after { right: auto; left: 16px; width: 18px; }
 }
 
+@media (min-width: 768px) and (max-width: 960px) {
+  .nft-infobulle { left: auto; right: 0; }
+  .nft-infobulle, .nft-ouvert .nft-infobulle, .nft-bouton:focus-visible + .nft-infobulle, .nft:hover .nft-infobulle { transform: none; }
+}
+
 @media (max-width: 767px) {
   :root { --gouttiere: 16px; }
   body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
   main { padding-top: 24px; }
   /* backdrop-filter ferait du menu fixe un enfant de l'en-tête au lieu de l'écran */
-  .entete { position: static; justify-content: center; backdrop-filter: none; }
+  .entete { position: relative; justify-content: center; backdrop-filter: none; }
+  .langue { position: absolute; top: 50%; right: 8px; transform: translateY(-50%); }
   .menu {
     position: fixed;
     z-index: 20;
@@ -234,7 +279,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   .menu a { flex-direction: column; gap: 2px; padding: 5px 2px; font-size: .78rem; }
   .menu svg { display: block; }
   .heros { grid-template-columns: 1fr; gap: 24px; }
-  .portrait { order: -1; width: 150px; height: 150px; margin: 0 auto; }
+  .nft { order: -1; }
+  .portrait { width: 150px; height: 150px; }
   .page-tete-lion > :last-child { display: none; }
   .grille { grid-template-columns: minmax(0, 1fr); }
   .actions .bouton { flex: 1 1 auto; text-align: center; }

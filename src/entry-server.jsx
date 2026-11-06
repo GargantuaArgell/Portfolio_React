@@ -5,9 +5,9 @@ import { Routeur } from './router'
 
 export { routes, balisesHead, meta, sitemapXml, llmsTxt, cvMd } from './data/seo.js'
 
-export const render = (chemin) =>
+export const render = (url) =>
   renderToString(
-    <Routeur cheminInitial={chemin}>
+    <Routeur cheminInitial={url}>
       <App />
     </Routeur>,
   )

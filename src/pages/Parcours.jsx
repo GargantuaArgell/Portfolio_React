@@ -1,13 +1,15 @@
 import React from 'react'
-import { Lien } from '../router'
-import { competences, engagements, langues, parcours } from '../data/profil'
+import { Lien, useRoute } from '../router'
 
 export default function Parcours() {
+  const { donnees, t } = useRoute()
+  const { competences, engagements, langues, parcours } = donnees
+
   return (
     <>
       <div className="page-tete">
-        <h1>Mon parcours</h1>
-        <p className="texte">Un arbre qui pousse depuis ses racines : du plus récent, en haut, au plus ancien.</p>
+        <h1>{t.monParcours}</h1>
+        <p className="texte">{t.introParcours}</p>
       </div>
 
       <ol className="arbre">
@@ -21,14 +23,14 @@ export default function Parcours() {
               <ul className="pastilles">
                 {e.competences.map((c) => <li key={c}>{c}</li>)}
               </ul>
-              {e.lien && <Lien to={e.lien} className="feuille-lien">Voir la fiche détaillée</Lien>}
+              {e.lien && <Lien to={e.lien} className="feuille-lien">{t.voirFiche}</Lien>}
             </article>
           </li>
         ))}
       </ol>
 
       <section>
-        <div className="section-tete"><h2>Compétences</h2></div>
+        <div className="section-tete"><h2>{t.competences}</h2></div>
         <div className="grille">
           {competences.map((c) => (
             <div className="bloc" key={c.titre}>
@@ -37,11 +39,11 @@ export default function Parcours() {
             </div>
           ))}
           <div className="bloc">
-            <h3>Langues</h3>
+            <h3>{t.langues}</h3>
             <ul className="pastilles">{langues.map((l) => <li key={l.nom}>{l.nom} ({l.niveau})</li>)}</ul>
           </div>
           <div className="bloc">
-            <h3>Engagement</h3>
+            <h3>{t.engagement}</h3>
             <ul className="liste">{engagements.map((e) => <li key={e}>{e}</li>)}</ul>
           </div>
         </div>

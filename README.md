@@ -13,7 +13,8 @@ npm run preview  # aperçu du build
 
 ## Mettre à jour le contenu
 
-Tout le contenu se trouve dans `src/data/profil.js` : statut, poste, projets, parcours, compétences.
+Le contenu français se trouve dans `src/data/profil.js` : statut, poste, projets, parcours, compétences.
+Sa traduction anglaise se trouve dans `src/data/profil.en.js`, et les textes d'interface dans `src/i18n.js`.
 Les pages, le JSON-LD, `sitemap.xml`, `llms.txt` et `cv.md` en sont générés au build.
 
 Pour ajouter un projet, ajoute un objet à `projets`, avec son image dans `public/images`.
