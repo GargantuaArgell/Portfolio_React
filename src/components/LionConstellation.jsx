@@ -2,13 +2,8 @@ import React from 'react'
 
 const LionConstellation = () => {
   return (
-    <div className="flex items-center justify-center w-full h-full">
-      <svg 
-        width="300" 
-        height="250" 
-        viewBox="0 0 300 250" 
-        className="animate-pulse"
-      >
+    <div>
+      <svg viewBox="60 30 200 200" aria-hidden="true">
         <defs>
           <linearGradient id="lionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#06b6d4" />
@@ -58,7 +53,7 @@ const LionConstellation = () => {
         <circle cx="130" cy="180" r="2.2" fill="url(#lionGradient)" filter="url(#lionGlow)">
           <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="1.3s" />
         </circle>
-        <circle cx="170" cy="180" r="2.2" fill="url(#lionGradient)" filter="url(#lionGradient)">
+        <circle cx="170" cy="180" r="2.2" fill="url(#lionGradient)" filter="url(#lionGlow)">
           <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="1.8s" />
         </circle>
         <circle cx="125" cy="210" r="2" fill="url(#lionGradient)" filter="url(#lionGlow)">

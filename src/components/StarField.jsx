@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const StarField = ({ density = 100, showConstellations = true, animated = true }) => {
+const StarField = ({ density = 60, showConstellations = true, animated = true }) => {
   const [stars, setStars] = useState([])
   const [constellations, setConstellations] = useState([])
 
@@ -99,12 +99,10 @@ const StarField = ({ density = 100, showConstellations = true, animated = true }
     return colors[Math.floor(Math.random() * colors.length)]
   }
 
-  const StarComponent = ({ star, isConstellation = false }) => (
+  const StarComponent = ({ star }) => (
     <div
       key={star.id}
-      className={`absolute rounded-full ${animated ? 'animate-pulse' : ''} ${
-        isConstellation ? 'z-8' : 'z-7'
-      }`}
+      className={`absolute rounded-full ${animated ? 'animate-pulse' : ''}`}
       style={{
         left: `${star.x}%`,
         top: `${star.y}%`,
@@ -136,7 +134,7 @@ const StarField = ({ density = 100, showConstellations = true, animated = true }
 
     return (
       <div
-                 className="absolute z-6 opacity-30"
+                 className="absolute opacity-30"
         style={{
           left: `${startStar.x}%`,
           top: `${startStar.y}%`,
@@ -152,7 +150,7 @@ const StarField = ({ density = 100, showConstellations = true, animated = true }
   }
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-5">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0, opacity: 0.55 }} aria-hidden="true">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-cyan-950/10 to-purple-950/10" />
       
@@ -176,11 +174,7 @@ const StarField = ({ density = 100, showConstellations = true, animated = true }
           
           {/* Constellation stars */}
           {constellation.stars.map(star => (
-            <StarComponent 
-              key={star.id} 
-              star={star} 
-              isConstellation={true} 
-            />
+            <StarComponent key={star.id} star={star} />
           ))}
         </div>
       ))}
