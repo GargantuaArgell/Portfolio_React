@@ -3,6 +3,7 @@
 export const personneEn = {
   ville: 'Brest, France',
   poste: 'Smart Grid Project Manager',
+  cv: '/images/Curriculum-Vitae-GRANDET-FELIX-EN.pdf',
   accroche: 'Engineering student at IMT Atlantique, apprentice at Enedis Labs',
   statut: 'Apprentice at Enedis Labs',
   bio: [
