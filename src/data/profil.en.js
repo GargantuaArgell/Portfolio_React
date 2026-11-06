@@ -77,7 +77,7 @@ export const projetsEn = {
     titre: 'Trading bot',
     contexte: 'Ongoing personal project',
     resume: 'A Python bot applying several trading strategies, currently in development.',
-    description: 'An ongoing personal project: a Python trading bot able to apply several strategies, such as moving average crossover and mean reversion. It connects to Coinbase and the Polygon blockchain, which requires rigorous handling of confidential data such as access keys.',
+    description: 'An ongoing personal project: a Python trading bot able to apply several strategies, such as moving average crossover and mean reversion.',
   },
   'kraken-redemption': {
     resume: 'A video game created in 48 hours, second place at the Wonderjam.',

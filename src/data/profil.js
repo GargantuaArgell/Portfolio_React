@@ -86,9 +86,9 @@ export const projets = [
     categorie: 'Finance',
     equipe: 1,
     contexte: 'Projet personnel en cours',
-    technologies: ['Python', 'Trading algorithmique', 'API', 'Coinbase', 'Polygon'],
+    technologies: ['Python', 'Trading algorithmique'],
     resume: 'Bot Python qui applique plusieurs stratégies de trading, en cours de développement.',
-    description: "Projet personnel en cours de développement : un bot de trading en Python capable d'appliquer plusieurs stratégies, comme le croisement de moyennes mobiles et le retour à la moyenne. Il se connecte à Coinbase et à la blockchain Polygon, ce qui impose une gestion rigoureuse des données confidentielles comme les clés d'accès.",
+    description: "Projet personnel en cours de développement : un bot de trading en Python capable d'appliquer plusieurs stratégies, comme le croisement de moyennes mobiles et le retour à la moyenne.",
   },
   {
     slug: 'kraken-redemption',
