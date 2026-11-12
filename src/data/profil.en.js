@@ -84,7 +84,7 @@ export const projetsEn = {
   cassiopea: {
     contexte: 'IUT2 Grenoble',
     resume: 'Design and deployment of a complete, secure network infrastructure.',
-    description: 'During my second year, our project was to design and deploy a network infrastructure. In a team of five, I was elected project manager: I handled project management and set up the Scrum tools. We built a complete network from scratch with numerous services (DNS, DHCP, PostgreSQL, wiki), along with network monitoring (Zabbix, Wazuh, Cerberus).',
+    description: 'A second-year project (SAÉ 4.01, track B): restructuring the network of a computer science department at Université Grenoble Alpes, for teachers and students, using only open-source software. In a team of five, I was elected project manager: I handled project management and set up the Scrum tools. We designed a segmented infrastructure hosted on the Proxmox hypervisor with Debian servers: a DMZ (demilitarised zone) for the public website, several VLANs including one reserved for administrators, and a firewall in front of each server. We deployed DNS (BIND9), DHCP (Kea), PostgreSQL, Apache2, PmWiki and Samba with LDAP authentication, along with network monitoring (Zabbix) and a SIEM (Wazuh). Every choice was backed by a comparison of solutions. We also wrote scripts for installation, virtual machine cloning and automated tests (connectivity, service availability, firewall rules, open ports), scheduled with cron. The team’s sensitive exchanges were encrypted with GnuPG and Bitwarden.',
   },
   'automatisation-supply-chain': {
     titre: 'Supply chain automation',
@@ -139,7 +139,7 @@ export const projetsEn = {
   phareaway: {
     contexte: 'IUT2 Grenoble',
     resume: 'Design and development of an application showcasing the maritime heritage of lighthouses.',
-    description: 'In our second year, we formed teams of six for a five-month project. We took it from the initial idea to production, through design and development. The project let us work on every aspect of project management, including cybersecurity, legal requirements and ISO standards.',
+    description: 'In our second year, we formed teams of six for a five-month project, and I was team leader. We took it from the initial idea to production, through design and development. The project let us work on every aspect of project management, including cybersecurity, legal requirements and ISO standards.',
   },
   studlife: {
     contexte: 'IUT2 Grenoble',
@@ -252,8 +252,8 @@ export const parcoursEn = [
 ]
 
 export const competencesEn = [
-  { titre: 'Languages', items: ['Python', 'Java', 'C/C++', 'SQL', 'R', 'HTML/CSS', 'JavaScript', 'PowerShell'] },
-  { titre: 'Security and networking', items: ['Cryptography (AES, HMAC)', 'Administration bastion', 'Forensics (Autopsy)', 'Wazuh', 'Zabbix', 'Linux', 'DNS', 'DHCP'] },
+  { titre: 'Languages', items: ['Python', 'Java', 'C/C++', 'SQL', 'R', 'HTML/CSS', 'JavaScript', 'PowerShell', 'Bash'] },
+  { titre: 'Security and networking', items: ['Cryptography (AES, HMAC)', 'Administration bastion', 'Forensics (Autopsy)', 'Wazuh (SIEM)', 'Zabbix', 'iptables', 'Linux (Debian)', 'Proxmox', 'DNS', 'DHCP', 'LDAP'] },
   { titre: 'Tools', items: ['Unreal Engine', 'React', 'Next.js', 'PostgreSQL', 'SharePoint', 'Azure', 'Git', 'Perforce', 'Jira'] },
   { titre: 'Methods', items: ['Project management', 'Agile', 'Scrum', 'GDPR', 'ISO standards', 'CSR'] },
 ]

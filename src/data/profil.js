@@ -73,9 +73,9 @@ export const projets = [
     phare: true,
     contexte: IUT,
     equipe: 5,
-    technologies: ['Leadership', 'Agile', 'Scrum', 'Jira', 'Linux', 'DHCP', 'DNS', 'Administration réseau', 'Administration système', 'PostgreSQL', 'Wiki', 'Zabbix', 'Wazuh', 'Cerberus', 'Déploiement cloud', 'Scripts d’automatisation', 'GitHub'],
+    technologies: ['Debian', 'Proxmox', 'Wazuh', 'Zabbix', 'iptables', 'LDAP', 'DNS (BIND9)', 'DHCP (Kea)', 'PostgreSQL', 'Apache2', 'PmWiki', 'Samba', 'Bash', 'Scripts d’automatisation', 'Administration réseau', 'Administration système', 'Linux', 'Déploiement cloud', 'Cerberus', 'Leadership', 'Agile', 'Scrum', 'Jira', 'GitHub'],
     resume: 'Conception et mise en place d’une infrastructure réseau complète et sécurisée.',
-    description: "Durant ma deuxième année, nous avons eu pour projet de créer et de mettre en place une infrastructure réseau. Au sein d'une équipe de cinq personnes, j'ai été élu chef de projet : je me suis occupé de la gestion de projet et de la mise en place des outils Scrum. Nous avons créé de zéro un réseau complet avec de nombreux services (DNS, DHCP, PostgreSQL, wiki), ainsi qu'une supervision du réseau (Zabbix, Wazuh, Cerberus).",
+    description: "Projet de deuxième année (SAÉ 4.01, parcours B) : restructurer le réseau du département informatique d'un IUT de l'Université Grenoble Alpes, pour des enseignants et des étudiants, uniquement avec des logiciels open source. Au sein d'une équipe de cinq personnes, j'ai été élu chef de projet : je me suis occupé de la gestion de projet et de la mise en place des outils Scrum. Nous avons conçu une infrastructure segmentée, hébergée sur l'hyperviseur Proxmox avec des serveurs Debian : une DMZ (zone démilitarisée) pour le site public, plusieurs VLAN dont un réservé aux administrateurs, et un pare-feu devant chaque serveur. Nous avons déployé les services DNS (BIND9), DHCP (Kea), PostgreSQL, Apache2, PmWiki et Samba avec une authentification LDAP, ainsi que la supervision du réseau (Zabbix) et un SIEM (Wazuh). Chaque choix a été justifié par un comparatif des solutions. Nous avons aussi écrit des scripts d'installation, de clonage de machines virtuelles et de tests automatisés (connectivité, disponibilité des services, règles de pare-feu, ports ouverts), planifiés avec cron. Les échanges sensibles de l'équipe étaient chiffrés avec GnuPG et Bitwarden.",
   },
   {
     slug: 'automatisation-supply-chain',
@@ -184,7 +184,7 @@ export const projets = [
     equipe: 6,
     technologies: ['React', 'Next.js', 'Tailwind CSS', 'SQLite', 'Agile', 'Scrum', 'Leadership', 'Gestion de projet', 'Normes ISO', 'RGPD', 'Cybersécurité', 'GitHub', 'GitLab'],
     resume: 'Conception et développement d’une application valorisant le patrimoine maritime des phares.',
-    description: "En deuxième année, nous avons formé des équipes de six personnes pour un projet de cinq mois. Nous l'avons mené de la recherche d'idée à la mise en production, en passant par la conception et le développement. Ce projet nous a permis de travailler tous les aspects de la gestion de projet, avec des volets cybersécurité, droit et normes ISO.",
+    description: "En deuxième année, nous avons formé des équipes de six personnes pour un projet de cinq mois, dont j'étais le chef d'équipe. Nous l'avons mené de la recherche d'idée à la mise en production, en passant par la conception et le développement. Ce projet nous a permis de travailler tous les aspects de la gestion de projet, avec des volets cybersécurité, droit et normes ISO.",
   },
   {
     slug: 'studlife',
@@ -350,8 +350,8 @@ export const parcours = [
 ]
 
 export const competences = [
-  { titre: 'Langages', items: ['Python', 'Java', 'C/C++', 'SQL', 'R', 'HTML/CSS', 'JavaScript', 'PowerShell'] },
-  { titre: 'Sécurité et réseau', items: ['Cryptographie (AES, HMAC)', 'Bastion d’administration', 'Forensic (Autopsy)', 'Wazuh', 'Zabbix', 'Linux', 'DNS', 'DHCP'] },
+  { titre: 'Langages', items: ['Python', 'Java', 'C/C++', 'SQL', 'R', 'HTML/CSS', 'JavaScript', 'PowerShell', 'Bash'] },
+  { titre: 'Sécurité et réseau', items: ['Cryptographie (AES, HMAC)', 'Bastion d’administration', 'Forensic (Autopsy)', 'Wazuh (SIEM)', 'Zabbix', 'iptables', 'Linux (Debian)', 'Proxmox', 'DNS', 'DHCP', 'LDAP'] },
   { titre: 'Outils', items: ['Unreal Engine', 'React', 'Next.js', 'PostgreSQL', 'SharePoint', 'Azure', 'Git', 'Perforce', 'Jira'] },
   { titre: 'Méthodes', items: ['Gestion de projet', 'Agile', 'Scrum', 'RGPD', 'Normes ISO', 'RSE'] },
 ]
